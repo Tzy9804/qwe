@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	firstnum<input type="text" name="" id="inp1">
+	<br><br>
+	secondnum<input type="text" name="" id="inp2">
+	<br><br>
+	<input type="button" name="" value="加" id="inp3">
+	<input type="button" name="" value="减" id="inp4">
+	<input type="button" name="" value="乘" id="inp5">
+	<input type="button" name="" value="除" id="inp6">
+	<input type="button" name="" value="取余" id="inp7">
+	<script type="text/javascript">
+		var a = document.getElementById('inp1');
+		var b = document.getElementById('inp2');
+		var c = document.getElementById('inp3');
+		c.onclick = function(){
+			var a = parseFloat(inp1.value);
+			var b = parseFloat(inp2.value);
+			alert((a+b).toFixed(2));
+		}
+		var  d = document.getElementById('inp4');
+		d.onclick = function(){
+			var a = parseFloat(inp1.value);
+			var b = parseFloat(inp2.value);
+			alert((a-b).toFixed(2));
+		}
+		var e = document.getElementById('inp5');
+		e.onclick = function(){
+			var a = parseFloat(inp1.value);
+			var b = parseFloat(inp2.value);
+			alert((a*b).toFixed(2));
+		}
+		var f = document.getElementById('inp6');
+		f.onclick=function(){
+			var a = parseFloat(inp1.value);
+			var b = parseFloat(inp2.value);
+			alert((a/b).toFixed(2));
+		}
+		var g = document.getElementById('inp7');
+		g.onclick=function(){
+			var a = parseFloat(inp1.value);
+			var b = parseFloat(inp2.value);
+			alert((a%b).toFixed(2));
+		}
+	</script>
+</body>
+</html>
